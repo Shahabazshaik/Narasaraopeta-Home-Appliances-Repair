@@ -199,23 +199,20 @@ export default function Hero() {
           font-size: 32px;
         }
         .floating-call-text {
-          display: none;
-          margin-left: 0;
+          display: inline;
+          margin-left: 10px;
           font-size: 16px;
           font-weight: 600;
           letter-spacing: 0.2px;
         }
-        @media (max-width: 480px) {
-          .floating-call-btn {
-            width: 120px;
-            border-radius: 30px;
-            justify-content: flex-start;
-            padding-left: 16px;
-          }
-          .floating-call-text {
-            display: inline;
-            margin-left: 10px;
-          }
+        .floating-call-btn {
+          width: 120px;
+          border-radius: 30px;
+          justify-content: flex-start;
+          padding-left: 16px;
+        }
+        @media (min-width: 768px) {
+          .floating-call-btn { display: none !important; }
         }
         @media (min-width: 768px) {
           .floating-call-btn { display: none !important; }

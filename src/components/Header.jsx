@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className={`header ${visible ? 'header--visible' : 'header--hidden'}`}>
-      <div className="container">
+      <div className="containher">
         <div className="logo">
           <h1> Narasaraopet Home Appliances Repair</h1>
           <p>Professional Repair Services</p>
