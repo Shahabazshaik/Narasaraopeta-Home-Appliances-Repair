@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Home Appliances Repair</h3>
+            <h3>Narasaraopet Home Appliances Repair</h3>
             <p>Your trusted partner for all appliance and electrical repair needs. Professional, reliable, affordable.</p>
           </div>
 

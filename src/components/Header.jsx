@@ -20,20 +20,30 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`header ${visible ? 'header--visible' : 'header--hidden'}`}>
-      <div className="containher">
-        <div className="logo">
-          <h1> Narasaraopet Home Appliances Repair</h1>
-          <p>Professional Repair Services</p>
+    <>
+      {/* Sticky phone number for mobile */}
+      <a
+        href="tel:+919876543210"
+        className="sticky-call-mobile"
+        aria-label="Call us now"
+      >
+        📞 +91 98765 43210
+      </a>
+      <header className={`header ${visible ? 'header--visible' : 'header--hidden'}`}>
+        <div className="container">
+          <div className="logo">
+            <h1> Narasaraopet Home Appliances Repair</h1>
+            <p>Professional Repair Services</p>
+          </div>
+          <nav className="nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
-        <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#testimonials">Reviews</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+      </header>
+    </>
   )
 }
